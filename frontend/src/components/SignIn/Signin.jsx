@@ -70,9 +70,9 @@ const Signin = () => {
 
     const { name, email_id, password, c_password } = user;
     var domain = email_id.substring(email_id.lastIndexOf("@") +1);
-    if(domain!='dtu.ac.in')
+    if(domain!='kiet.edu.in')
     {
-      return alert("Only DTU institutional email ID's allowed.");
+      return alert("Only KIET institutional email ID's allowed.");
     }
     if(password!=c_password)
     {
@@ -98,7 +98,7 @@ const Signin = () => {
       console.log("Invalid Registration");
     } 
     else if (data.status === 400 || !data) {
-      window.alert("Only DTU institutional email ID's allowed");
+      window.alert("Only kiet institutional email ID's allowed");
     } 
     else if (data.status === 404 || !data) {
       window.alert("Issue Encountered");
@@ -123,7 +123,7 @@ const Signin = () => {
           <form action="#">
             <div className="H1">Create Account</div>
 
-            <span id="Span">Use your @dtu.ac.in email for registration</span>
+            <span id="Span">Use your @kiet.edu.in email for registration</span>
             <input
               type="text"
               name="name"
@@ -167,7 +167,7 @@ const Signin = () => {
             <div className="H1 ">Sign in</div>
 
             <span id="Span" className="pb-5">
-              Use your @dtu.ac.in account
+              Use your @kiet.edu.in account
             </span>
             <input
               type="email"
