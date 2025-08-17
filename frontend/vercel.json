@@ -1,9 +1,8 @@
 {
-    "rewrites": [
-      {
-        "source": "/:path*",
-        "destination": "https://college-bazaar-backend.vercel.app/:path*"
-      }
-    ]
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "https://kiet-megamart-backend.vercel.app/:path*"
+    }
+  ]
 }
-  
